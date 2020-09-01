@@ -1,0 +1,110 @@
+.search {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.25em 0;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    &__input {
+        border: none;
+        background-color: transparent;
+        margin-left: 1em;
+        width: 70%;
+
+        &::placeholder {
+            font-size: 1rem;
+            color: $headings;
+        }
+    }
+
+    &__enter {
+        background-color: $info-text;
+        height: 100%;
+        padding: 0 1.5em;
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.address-info {
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2em 0 3em 0;
+    box-shadow: 0px 9px 14px 2px hsla(0, 0%, 80%, 0.16);
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+
+    &__container {
+        @media screen and (min-width: 760px) {
+        
+            max-width: 70% !important;
+    
+        }
+    }
+
+    @media screen and (min-width: 760px) {
+        
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    &__content {
+        padding: 0 2em;
+    }
+
+    &__content + &__content {
+        margin-top: 1em;
+
+        @media screen and (min-width: 760px) {
+            
+            margin-top: 0em;
+            margin-right: 1em;
+            border-left: 1px solid hsla(0, 0%, 80%, 0.281);
+
+    
+        }
+    }
+
+    &__title {
+        font-size: 0.8rem;
+        color: $headings;
+        text-transform: uppercase;
+        margin-bottom: 0.7em;
+        text-align: center;
+
+        @media screen and (min-width: 760px) {
+            
+            text-align: left;
+        }
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        color: $info-text;
+        font-weight: $font-bold;
+        text-align: center;
+
+        @media screen and (min-width: 760px) {
+            font-size: 1.75rem;
+            text-align: left;
+        }
+
+    }
+
+}

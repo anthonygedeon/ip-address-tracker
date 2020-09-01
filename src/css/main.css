@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  position: relative;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.25em 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.search__input {
+  border: none;
+  background-color: transparent;
+  margin-left: 1em;
+  width: 70%;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-size: 1rem;
+  color: #969696;
+}
+
+.search__input:-ms-input-placeholder {
+  font-size: 1rem;
+  color: #969696;
+}
+
+.search__input::-ms-input-placeholder {
+  font-size: 1rem;
+  color: #969696;
+}
+
+.search__input::placeholder {
+  font-size: 1rem;
+  color: #969696;
+}
+
+.search__enter {
+  background-color: #2b2b2b;
+  height: 100%;
+  padding: 0 1.5em;
+  position: absolute;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.address-info {
+  position: absolute;
+  left: 50%;
+  top: 250px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2em 0 3em 0;
+  -webkit-box-shadow: 0px 9px 14px 2px rgba(204, 204, 204, 0.16);
+          box-shadow: 0px 9px 14px 2px rgba(204, 204, 204, 0.16);
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 760px) {
+  .address-info__container {
+    max-width: 70% !important;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .address-info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.address-info__content {
+  padding: 0 2em;
+}
+
+.address-info__content + .address-info__content {
+  margin-top: 1em;
+}
+
+@media screen and (min-width: 760px) {
+  .address-info__content + .address-info__content {
+    margin-top: 0em;
+    margin-right: 1em;
+    border-left: 1px solid rgba(204, 204, 204, 0.281);
+  }
+}
+
+.address-info__title {
+  font-size: 0.8rem;
+  color: #969696;
+  text-transform: uppercase;
+  margin-bottom: 0.7em;
+  text-align: center;
+}
+
+@media screen and (min-width: 760px) {
+  .address-info__title {
+    text-align: left;
+  }
+}
+
+.address-info__text {
+  font-size: 1.5rem;
+  color: #2b2b2b;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (min-width: 760px) {
+  .address-info__text {
+    font-size: 1.75rem;
+    text-align: left;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 0 10em 0;
+  background-image: url(../images/pattern-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 760px) {
+  .header__container {
+    max-width: 30%;
+  }
+}
+
+.header__title {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 760px) {
+  .header__title {
+    font-size: 2rem;
+  }
+}
