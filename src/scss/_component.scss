@@ -16,6 +16,9 @@
         background-color: transparent;
         margin-left: 1em;
         width: 70%;
+        font-size: 1rem;
+        font-weight: $font-bold;
+        color: $info-text;
 
         &::placeholder {
             font-size: 1rem;
@@ -31,6 +34,12 @@
         right: 0;
         display: flex;
         align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            transition: background-color 0.3s ease-in;
+            background-color: hsl(0, 0%, 28%);;
+        }
     }
 }
 
